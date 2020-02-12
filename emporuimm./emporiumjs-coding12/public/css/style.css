@@ -7846,7 +7846,6 @@ a.text-dark:hover, a.text-dark:focus {
   #products .container .solde .titleprice #through {
     text-decoration: line-through; }
   #products #barre {
-    text-decoration: line-through;
-    margin-left: 100px; }
+    text-decoration: line-through; }
 
 /*# sourceMappingURL=style.css.map */
