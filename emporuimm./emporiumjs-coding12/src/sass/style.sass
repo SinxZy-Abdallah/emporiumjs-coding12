@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "./variables"
 
 // DEBUT NAVBAR
 .imgnav
@@ -9,7 +10,7 @@
     display: flex
     justify-content: center
     a
-        transition: 0.3s ease-in-out
+        transition: 0.3s ease-in
         margin: 15px
         &:hover
             color: red !important
@@ -48,7 +49,6 @@
         background-position: center
     #image2
         background-image: url("../../public/img/services/service-2.jpg")
-
         height: 33vh
         width: auto
         background-size: cover
@@ -81,8 +81,20 @@
             .titleprice
                 #through
                     text-decoration: line-through
+#barre
+    text-decoration: $barre
 
-    #barre
-        text-decoration: line-through
-            
-            
+#Background
+    font-weight: bold
+    display: flex
+    justify-content: center
+    .bg
+        background-image: url("../../public/img/background.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        height: 650px
+        width: 1600px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
