@@ -1,5 +1,13 @@
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
 @import "./variables"
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss'
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss'
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss'
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss'
+
+body
+    fontawesome-free: $fa-font-path
 
 // DEBUT NAVBAR
 .imgnav
@@ -98,3 +106,28 @@
         justify-content: center
         align-items: center
         flex-direction: column
+
+#over-footer
+    .row
+        .white
+            background-color: whitesmoke
+footer
+    .container
+        .links
+            a
+                margin: 4px
+                color: white
+
+        .cadrer
+            button
+                border-style: solid
+                border-radius: 5px
+                border-color: grey
+                margin: 3px
+                text-decoration: none
+                background : transparent
+                color: grey
+                padding: 4px
+                
+    .black
+        background-color: black
