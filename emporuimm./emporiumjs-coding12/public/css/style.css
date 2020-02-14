@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("./_fonts.sass");
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -12230,7 +12231,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 body {
-  fontawesome-free: "../../node_modules/@fortawesome/fontawesome-free/webfonts"; }
+  font-family: "Poppins", sans-serif; }
 
 .imgnav {
   display: flex;
@@ -12241,6 +12242,7 @@ body {
   display: flex;
   justify-content: center; }
   .collapse a {
+    color: black;
     transition: 0.3s ease-in;
     margin: 15px; }
     .collapse a:hover {
