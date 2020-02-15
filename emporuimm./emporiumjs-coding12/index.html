@@ -32,16 +32,16 @@
         </div>
         <button class="bg-white color m-1">white</button>
         <button class="bg-dark color m-1 text-light">black</button>
-        <button class="bg-secondary co m-1 text-light">CONNEXION</button>
+        <button class="btn bg-secondary co m-1 text-white">CONNEXION</button>
       </div>
     </nav>
     <!-- FIN NAVBAR -->
   </header>
 
   <!-- Container shop -->
-  <section id="shop">
+  <section id="shop" class="bg-light">
     <div class="container">
-      <div class="jumbotron row bg-transparent">
+      <div id="bgjumbo" class="jumbotron row bg-transparent">
         <div class="text col-lg-8 col-sm">
           <h1 class="display-4 text-danger">Shop at</h1>
           <span class="lead">
@@ -81,14 +81,14 @@
   </section>
   <!-- FIN section services -->
 
-  <!-- section products -->
+  <!-- section recents products -->
   <section id="products" class="pb-5">
     <div class="container">
       <h4 class="text-center pt-5">Recents Products</h4>
       <div class="row">
         <div class="col-lg-4 col-sm Luxury">
           <img src="./public/img/products_mini/product-luxry-sofa.jpg" width="100%" alt="">
-          <span>Luxury Sofa</span> <br>
+          <span id="lux">Luxury Sofa</span> <br>
           <span class="text-danger">$600.00</span>
         </div>
         <div class="col-lg-4 col-sm-12 solde">
@@ -98,7 +98,7 @@
               <img class="ml-4" src="./public/img/sale.png" height="60px" alt="">
             </div>
             <div class="titleprice">
-              <span class="p-5">Leather Gloves</span> <br>
+              <span id="leath" class="p-5">Leather Gloves</span> <br>
               <span class="text-secondary p-5" id="through">$34.00<span class="text-danger mx-2"> $27.00</span></span>
             </div>
           </div>
@@ -106,14 +106,14 @@
         <div class="col-lg-4 col-sm bol">
           <img src="./public/img/products_mini/product-cups.jpg" width="100%" alt="">
           <div class="text-center pt-3">
-            <span>Colorful Bowl</span> <br>
+            <span id="bol">Colorful Bowl</span> <br>
             <span class="text-danger">$18.00</span>
           </div>
         </div>
       </div>
       <!-- second row -->
       <div class="row">
-        <div class="col-lg-4 col-sm">
+        <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products/product-bag-700x500.jpg" width="100%" alt="">
 
           <div class="saletitle d-flex">
@@ -121,7 +121,7 @@
               <img src="./public/img/sale.png" width="60px" alt="">
             </div>
             <div class="ml-5 pt-3">
-              <span>Women Bag</span> <br>
+              <span id="women">Women Bag</span> <br>
               <span id="barre" class="text-secondary">$420.00</span>
               <span class="text-danger">$350.00</span>
             </div>
@@ -130,14 +130,14 @@
         <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products/product-tshitr-700x500.jpg" width="100%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
-            <span>Minimal T-Shirt</span>
+            <span id="tshirt">Minimal T-Shirt</span>
             <span class="text-danger">$15.00</span>
           </div>
         </div>
         <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products_mini/product-plates.jpg" width="100%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
-            <span>Plates Set</span>
+            <span id="plats">Plates Set</span>
             <span class="text-danger">$30.00</span>
           </div>
         </div>
@@ -149,21 +149,21 @@
         <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products_mini/product-modern-sofa.jpg" width="100%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
-            <span>Modern Sofa</span>
+            <span id="sofa">Modern Sofa</span>
             <span class="text-danger">$900.00</span>
           </div>
         </div>
         <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products_mini/product-bed.jpg" width="100%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
-            <span>Bed Linen</span>
+            <span id="bed">Bed Linen</span>
             <span class="text-danger">$79.00</span>
           </div>
         </div>
         <div class="col-lg-4 col-sm pt-5">
           <img src="./public/img/products_mini/product-shoes.jpg" width="100%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
-            <span>Minimal Shoes</span>
+            <span id="shoes">Minimal Shoes</span>
             <span class="text-danger">$60.00</span>
           </div>
         </div>

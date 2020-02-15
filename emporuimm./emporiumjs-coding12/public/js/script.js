@@ -9,6 +9,19 @@ let a2 = document.getElementsByTagName('a')[2]
 let a3 = document.getElementsByTagName('a')[3]
 let a4 = document.getElementsByTagName('a')[4]
 let a5 = document.getElementsByTagName('a')[5]
+let bgservice = document.getElementById('service')
+let bgproducts = document.getElementById('products')
+let h4 = document.getElementsByTagName('h4')[0]
+let lux = document.getElementById('lux')
+let leath = document.getElementById('leath')
+let bol = document.getElementById('bol')
+let women = document.getElementById('women')
+let tshirt = document.getElementById('tshirt')
+let plats = document.getElementById('plats')
+let sofa = document.getElementById('sofa')
+let bed = document.getElementById('bed')
+let shoes = document.getElementById('shoes')
+
 // EVENT
 btnblack.addEventListener('click', () => {
     headernav.style.backgroundColor = 'black'
@@ -25,4 +38,16 @@ btnblack.addEventListener('click', () => {
     a4.classList.add('text-white')
     a5.classList.remove('text-dark')
     a5.classList.add('text-white')
+    bgservice.style.backgroundColor = "black"
+    bgproducts.style.backgroundColor = 'black'
+    h4.style.color = 'white'
+    lux.style.color = 'white'
+    leath.style.color = 'white'
+    bol.style.color = 'white'
+    women.style.color = 'white'
+    tshirt.style.color = 'white'
+    plats.style.color = 'white'
+    sofa.style.color = 'white'
+    bed.style.color = 'white'
+    shoes.style.color = 'white'
 })
