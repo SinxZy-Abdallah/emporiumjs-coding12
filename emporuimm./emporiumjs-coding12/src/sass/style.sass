@@ -20,29 +20,23 @@ body
     background-color: black
     box-shadow: 0 0 10px red
     z-index: 99
-
 .sticky + .content
     padding-top: 60px
 
 // DEBUT NAVBAR
-.imgnav
-    display: flex
-    justify-content: center
-    padding: 80px
 .collapse
-    display: flex
     justify-content: center
     overflow: hidden
     a
         color: black
         transition: 0.3s ease-in
         margin: 15px
-        display: block
         &:hover
             color: red !important
-
-    .co
-        border-style: none
+    .bg-white
+        box-shadow: 0 0 15px black
+    .bg-dark
+        box-shadow: 0 0 15px white
 
 #shop
     background-color: whitesmoke
@@ -57,6 +51,18 @@ body
         p
             img
                 background-size: cover
+    #autotext
+        border-right: 0.15em solid #bb0b0b
+        letter-spacing: 0.05em
+        animation: blink 0.75s step-end infinite
+
+        @keyframes blink
+            from,
+            to
+                border-color: transparent
+            50%
+                border-color: #bb0b0b
+
     .pblanc
         .img-fluid
             max-width: 100%
@@ -150,7 +156,6 @@ footer
 
     .black
         background-color: black
-
 // FORM POPUP connexion
 
 .popup-form

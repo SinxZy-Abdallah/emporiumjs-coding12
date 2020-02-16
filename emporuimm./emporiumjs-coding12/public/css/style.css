@@ -12247,24 +12247,19 @@ body {
 .sticky + .content {
   padding-top: 60px; }
 
-.imgnav {
-  display: flex;
-  justify-content: center;
-  padding: 80px; }
-
 .collapse {
-  display: flex;
   justify-content: center;
   overflow: hidden; }
   .collapse a {
     color: black;
     transition: 0.3s ease-in;
-    margin: 15px;
-    display: block; }
+    margin: 15px; }
     .collapse a:hover {
       color: red !important; }
-  .collapse .co {
-    border-style: none; }
+  .collapse .bg-white {
+    box-shadow: 0 0 15px black; }
+  .collapse .bg-dark {
+    box-shadow: 0 0 15px white; }
 
 #shop {
   background-color: whitesmoke;
@@ -12278,6 +12273,16 @@ body {
       font-weight: bold; }
     #shop .jumbotron p img {
       background-size: cover; }
+  #shop #autotext {
+    border-right: 0.15em solid #bb0b0b;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite; }
+@keyframes blink {
+  from,
+to {
+    border-color: transparent; }
+  50% {
+    border-color: #bb0b0b; } }
   #shop .pblanc .img-fluid {
     max-width: 100%;
     height: auto; }

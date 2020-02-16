@@ -141,7 +141,7 @@ function closeForm2() {
 window.onscroll = function () { myFunction() }
 let nav = document.getElementById('nav')
 let sticky = nav.offsetTop
-
+let emporuim = document.getElementById('firsth1')
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         nav.classList.add("sticky")
@@ -149,3 +149,21 @@ function myFunction() {
         nav.classList.remove("sticky");
     }
 }
+
+
+
+///////// AUTO TEXT ANIMATION
+const autotext = document.getElementById('autotext')
+const text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring wich I enjoy with my."
+let index = 0
+
+// jouer animation autotext function
+const play = () => {
+    autotext.innerHTML = text.slice(0, index)
+    index++;
+    if(index > text.length){
+        index = 0
+    }
+}
+
+let timer = setInterval(play, 200)
