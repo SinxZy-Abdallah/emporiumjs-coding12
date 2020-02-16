@@ -21,7 +21,7 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div id="nav" class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link text-dark" href="#">HOME</a>
           <a class="nav-item nav-link text-dark" href="#">PRODUCT</a>
@@ -32,11 +32,56 @@
         </div>
         <button class="bg-white color m-1">white</button>
         <button class="bg-dark color m-1 text-light">black</button>
-        <button class="btn bg-secondary co m-1 text-white">CONNEXION</button>
+        <button id="co" class="btn bg-danger co m-1 text-white" onclick="openForm()">CONNEXION</button>
       </div>
     </nav>
     <!-- FIN NAVBAR -->
   </header>
+
+  <!-- POP UP CONNEXION -->
+
+  <div class="col-lg-8 col-sm popup-form bg-dark" id="myform">
+    <form class="formm d-flex flex-column">
+      <button class="cancel text-light bg-danger" onclick="closeForm()">X</button>
+      <a href="#" onclick="openForm2()">
+        <h1 id="insc">INSCRIPTION</h1>
+      </a>
+      <span class="text-secondary ml-5">//</span>
+      <h1 class="text-danger">CONNEXION</h1>
+      <label class="text-white py-2" for="email"><strong>E -mail</strong></label>
+      <input type="email" placeholder="entrez votre e-mail" name="email" required>
+      <label class="text-white py-2" for="password"><strong>Mot de passe</strong></label>
+      <input class="mb-3" type="password" placeholder="entrez votre mot de passe" name="password" required>
+      <button class="btn">Envoyer</button>
+    </form>
+  </div>
+
+  <!-- FIN POPUP connexion -->
+
+  <!-- POP UP inscription-->
+ 
+  <div class="col-lg-8 col-sm popup-form2 bg-dark" id="myform2">
+    <form class="formm2 d-flex flex-column">
+      <button class="cancel2 text-light bg-danger" onclick="closeForm2()">X</button>
+      <a href="#" onclick="openForm()">
+        <h1 id="connexion">CONNEXION</h1>
+      </a>
+      <span class="text-secondary ml-5">//</span>
+      <h1 class="text-danger">INSCRIPTION</h1>
+      <label class="text-white py-2" for="name"><strong>Nom</strong></label>
+      <input type="name" placeholder="entrez votre nom" name="name" required>
+      <label class="text-white py-2" for="email"><strong>E -mail</strong></label>
+      <input type="email" name="email" placeholder="entrez votre email" required>
+      <label class="text-white py-2" for="password"><strong>Mot de passe</strong></label>
+      <input type="password" placeholder="entrez votre mot de passe" name="password" required>
+      <label class="text-white py-2" for="password"><strong>Confirmez votre mot de passe</strong></label>
+      <input type="password" name="password" placeholder="confirmez votre mot de passe" required>
+      <button class="btn2 mt-5 p-2">Envoyer</button>
+    </form>
+  </div>
+
+
+  <!-- FIN POP UP inscription -->
 
   <!-- Container shop -->
   <section id="shop" class="bg-light">
@@ -135,7 +180,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-sm pt-5">
-          <img src="./public/img/products_mini/product-plates.jpg" width="100%" alt="">
+          <img src="./public/img/products_mini/product-plates.jpg" width="91%" alt="">
           <div class="textprice d-flex flex-column text-center pt-3">
             <span id="plats">Plates Set</span>
             <span class="text-danger">$30.00</span>
@@ -185,14 +230,14 @@
   </section>
   <!-- section background finish -->
 
-  <!-- squad carousel -->
+  <!-- squad fashion carousel  -->
   <section id="Fashion carousel">
     <div class="container">
-      <h3 class="text-center p-5">Hot Fashion Products</h1>
+      <h3 class="text-center p-5" id="h3title">Hot Fashion Products</h1>
         <div class="row">
           <div class="col-lg-3 col-sm Luxury text-center">
             <img src="./public/img/products_mini/product-luxry-sofa.jpg" width="100%" alt="">
-            <span>Luxury Sofa</span> <br>
+            <span id="lux2">Luxury Sofa</span> <br>
             <span class="text-danger">$600.00</span>
           </div>
           <div class="col-lg-3 col-sm solde">
@@ -202,7 +247,7 @@
                 <img class="ml-4" src="./public/img/sale.png" height="60px" alt="">
               </div>
               <div class="titleprice p-3">
-                <span>Leather Gloves</span> <br>
+                <span id="leath2">Leather Gloves</span> <br>
                 <span class="text-secondary" id="barre">$34.00</span>
                 <span class="text-danger">$27.00</span>
               </div>
@@ -211,19 +256,19 @@
           <div class="col-lg-3 col-sm bol">
             <img src="./public/img/products_mini/product-cups.jpg" width="100%" alt="">
             <div class="text-center pt-3">
-              <span>Colorful Bowl</span> <br>
+              <span id="bol2">Colorful Bowl</span> <br>
               <span class="text-danger">$18.00</span>
             </div>
           </div>
           <div class="col-lg-3 col-sm">
-            <img src="./public/img/products/product-bag-700x500.jpg" width="100%" alt="">
+            <img src="./public/img/products/product-bag-700x500.jpg" width="110%" alt="">
 
             <div class="saletitle d-flex">
               <div class="imgsale pt-3">
                 <img src="./public/img/sale.png" width="60px" alt="">
               </div>
               <div class="ml-5 pt-3">
-                <span>Women Bag</span>
+                <span id="women2">Women Bag</span>
                 <span id="barre" class="text-secondary">$420.00</span>
                 <span class="text-danger">$350.00</span>
               </div>
@@ -232,11 +277,11 @@
         </div>
     </div>
     <!-- Btn carousel -->
-    <div class="container text-center pt-">
-      <button class="btn"><i class="far fa-circle"></i></button>
-      <button class="btn"><i class="far fa-circle"></i></button>
-      <button class="btn"><i class="far fa-circle"></i></button>
-      <button class="btn"><i class="far fa-circle"></i></button>
+    <div class="container text-center pt-4">
+      <button id="btn" class="btn"><i class="far fa-circle"></i></button>
+      <button id="btn2" class="btn"><i class="far fa-circle"></i></button>
+      <button id="btn3" class="btn"><i class="far fa-circle"></i></button>
+      <button id="btn4" class="btn"><i class="far fa-circle"></i></button>
     </div>
   </section>
   <!-- fin squad -->
@@ -313,6 +358,15 @@
       <span class="text-secondary">COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</span>
     </div>
   </footer>
+
+
+
+
+
+
+
+
+
 
 
 

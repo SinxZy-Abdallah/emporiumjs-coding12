@@ -12232,6 +12232,21 @@ readers do not read off random characters that represent icons */
 body {
   font-family: "Poppins", sans-serif; }
 
+.content {
+  padding: 16px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 0 10px red;
+  z-index: 99; }
+
+.sticky + .content {
+  padding-top: 60px; }
+
 .imgnav {
   display: flex;
   justify-content: center;
@@ -12239,11 +12254,13 @@ body {
 
 .collapse {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
   .collapse a {
     color: black;
     transition: 0.3s ease-in;
-    margin: 15px; }
+    margin: 15px;
+    display: block; }
     .collapse a:hover {
       color: red !important; }
   .collapse .co {
@@ -12341,5 +12358,69 @@ footer .container .cadrer button {
   padding: 4px; }
 footer .black {
   background-color: black; }
+
+.popup-form {
+  display: none;
+  position: fixed;
+  box-shadow: 0 0 50px #ff0015;
+  z-index: 9;
+  left: 20%;
+  bottom: 15%;
+  width: 60%; }
+  .popup-form .formm {
+    height: 100%;
+    padding: 10%; }
+    .popup-form .formm .btn {
+      background-color: #ff0015;
+      color: white;
+      border: none;
+      cursor: pointer;
+      max-width: 40%;
+      margin-left: 30%;
+      opacity: 0.8;
+      font-weight: bold; }
+      .popup-form .formm .btn:hover {
+        opacity: 2; }
+    .popup-form .formm .cancel {
+      max-width: 5% !important;
+      margin-left: 90%; }
+
+#insc {
+  color: grey; }
+  #insc:hover {
+    opacity: 2;
+    color: #ff0015; }
+
+.popup-form2 {
+  display: none;
+  position: fixed;
+  box-shadow: 0 0 50px #ff0015;
+  z-index: 9;
+  left: 20%;
+  bottom: 15%;
+  width: 60%; }
+  .popup-form2 .formm2 {
+    height: 100%;
+    padding: 2%; }
+    .popup-form2 .formm2 .btn2 {
+      background-color: #ff0015;
+      color: white;
+      border: none;
+      cursor: pointer;
+      max-width: 40%;
+      margin-left: 30%;
+      opacity: 0.8;
+      font-weight: bold; }
+      .popup-form2 .formm2 .btn2:hover {
+        opacity: 2; }
+    .popup-form2 .formm2 .cancel2 {
+      max-width: 5% !important;
+      margin-left: 90%; }
+
+#connexion {
+  color: grey; }
+  #connexion:hover {
+    opacity: 2;
+    color: #ff0015; }
 
 /*# sourceMappingURL=style.css.map */
