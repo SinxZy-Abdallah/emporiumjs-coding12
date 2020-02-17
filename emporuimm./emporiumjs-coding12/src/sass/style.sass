@@ -17,7 +17,7 @@ body
     top: 0
     left: 0
     width: 100%
-    background-color: black
+    background: linear-gradient(0.25turn, #000000, #9b9b9b, #0f0f0f)
     box-shadow: 0 0 10px red
     z-index: 99
 
@@ -30,15 +30,22 @@ body
     overflow: hidden
     a
         color: black
-        transition: 0.3s ease-in-out
+        transition: 0.4s ease-in-out
         margin: 15px
         &:hover
             color: red !important
+            transform: translateX(-10px) rotate(-15deg)
+
     .bg-white
         box-shadow: 0 0 15px black
+        padding: 10px
+        border-radius: 20%
+        margin: 2px
     .bg-dark
         box-shadow: 0 0 15px white
-
+        padding: 10px
+        border-radius: 20%
+        margin: 15px
 #shop
     background-color: whitesmoke
     padding-top: 50px
@@ -128,7 +135,7 @@ body
         background-size: cover
         background-repeat: no-repeat
         height: 650px
-        width: 1600px
+        width: 120%
         display: flex
         justify-content: center
         align-items: center
@@ -136,7 +143,6 @@ body
     #fashion-carousel
         position: relative
         margin: auto
-
 
 #over-footer
     .row
@@ -191,6 +197,7 @@ footer
             margin-left: 90%
 #insc
     color: grey
+    text-decoration-line: none
     &:hover
         opacity: 2
         color: #ff0015

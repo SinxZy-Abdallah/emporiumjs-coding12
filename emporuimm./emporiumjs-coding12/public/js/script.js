@@ -153,16 +153,11 @@ function myFunction() {
 
 
 ///////// AUTO TEXT ANIMATION
-const autotext = document.getElementById('autotext')
-// const text = "emporuim."
-const text2 = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring wich Ienjoy with my."
-let index = 0
+const text2 = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring wich I enjoy with my."
+let index = 0                       
 const autotextspan = document.getElementById('autotextspan')
+
 // jouer animation autotext function
-// const play = () => {
-//     autotext.innerHTML = text.slice(0, index)
-//     index++;
-// }
 const play2 = () => {
     autotextspan.innerHTML = text2.slice(0, index)
     if (index > text2.length) {
@@ -171,7 +166,7 @@ const play2 = () => {
     index++;
 }
 // let timer = setInterval(play, 250)
-let timer2 = setInterval(play2, 600)
+let timer2 = setInterval(play2, 160)
 
 
 ////  CAROUSEL 
@@ -199,7 +194,6 @@ img7.style.display = 'none'
 img8.style.display = 'none'
 img9.style.display = 'none'
 
-
 // slide 1
 slide1.addEventListener('click', () => {
     img1.style.display = 'block'
@@ -211,14 +205,15 @@ slide1.addEventListener('click', () => {
     img7.style.display = 'none'
     img8.style.display = 'none'
     img9.style.display = 'none'
-
 })
 slide2.addEventListener('click', () => {
     img1.style.display = 'none'
     img2.style.display = 'none'
     img5.style.display = 'block'
     img6.style.display = 'block'
+
 })
+
 slide3.addEventListener('click', () => {
     img1.style.display = 'none'
     img2.style.display = 'none'
@@ -238,3 +233,5 @@ slide4.addEventListener('click', () => {
     img8.style.display = 'block'
     img9.style.display = 'block'
 })
+
+

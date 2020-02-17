@@ -12240,7 +12240,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background: linear-gradient(0.25turn, #000000, #9b9b9b, #0f0f0f);
   box-shadow: 0 0 10px red;
   z-index: 99; }
 
@@ -12252,14 +12252,21 @@ body {
   overflow: hidden; }
   .collapse a {
     color: black;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     margin: 15px; }
     .collapse a:hover {
-      color: red !important; }
+      color: red !important;
+      transform: translateX(-10px) rotate(-15deg); }
   .collapse .bg-white {
-    box-shadow: 0 0 15px black; }
+    box-shadow: 0 0 15px black;
+    padding: 10px;
+    border-radius: 20%;
+    margin: 2px; }
   .collapse .bg-dark {
-    box-shadow: 0 0 15px white; }
+    box-shadow: 0 0 15px white;
+    padding: 10px;
+    border-radius: 20%;
+    margin: 15px; }
 
 #shop {
   background-color: whitesmoke;
@@ -12340,7 +12347,7 @@ to {
     background-size: cover;
     background-repeat: no-repeat;
     height: 650px;
-    width: 1600px;
+    width: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12386,8 +12393,7 @@ footer .black {
       max-width: 40%;
       margin-left: 30%;
       opacity: 0.8;
-      font-weight: bold;
-      transition: 3s ease-in-out; }
+      font-weight: bold; }
       .popup-form .formm .btn:hover {
         opacity: 2; }
     .popup-form .formm .cancel {
@@ -12395,7 +12401,8 @@ footer .black {
       margin-left: 90%; }
 
 #insc {
-  color: grey; }
+  color: grey;
+  text-decoration-line: none; }
   #insc:hover {
     opacity: 2;
     color: #ff0015; }
