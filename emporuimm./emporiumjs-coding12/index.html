@@ -12,13 +12,12 @@
 <body>
   <header>
     <!-- TITLE EMPORUIM -->
-    <h1 class="text-center p-3 font-weight-bold" id="firsth1">emporuim.</h1>
+    <h1 class="pt-5 text-center font-weight-bold" id="autotext">emporuim.</h1>
 
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-      <button class="navbar-toggler" onclick="return false" type="button" data-toggle="collapse"
-        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -41,7 +40,7 @@
   <!-- POP UP CONNEXION -->
 
   <div class="col-lg-8 col-sm popup-form bg-dark" id="myform">
-    <form class="formm d-flex flex-column">
+    <form onclick="return false" class="formm d-flex flex-column">
       <button class="cancel text-light bg-danger" onclick="closeForm()">X</button>
       <a href="#" onclick="openForm2()">
         <h1 id="insc">INSCRIPTION</h1>
@@ -61,7 +60,7 @@
   <!-- POP UP inscription-->
 
   <div class="col-lg-8 col-sm popup-form2 bg-dark" id="myform2">
-    <form class="formm2 d-flex flex-column">
+    <form onclick="return false" class="formm2 d-flex flex-column">
       <button class="cancel2 text-light bg-danger" onclick="closeForm2()">X</button>
       <a href="#" onclick="openForm()">
         <h1 id="connexion">CONNEXION</h1>
@@ -89,7 +88,7 @@
           <h1 class="display-4 text-danger">Shop at</h1>
           <span class="lead">
             <img class="mb-2 img-fluid" width="65%" src="./public/img/logo.png" alt=""><br>
-            <span id="autotext">A wonderful serenity has taken possession of my <br> entire soul, like these sweet
+            <span id="autotextspan">A wonderful serenity has taken possession of my <br> entire soul, like these sweet
               mornings of spring wich I
               enjoy
               with my.</span></span> <br> <br>
@@ -222,8 +221,8 @@
 
   <!-- Section Background -->
 
-  <section id="Background">
-    <div class="bg col-lg-12 col-sm img-fluid">
+  <section id="Background" class="img-fluid">
+    <div class="bg col-lg-12 col-sm">
       <h2 class="text-white text-center p-3">Discover Thousands Of Great Products</h2>
       <button class="btn bg-danger text-white ">LEARN MORE</button>
     </div>
@@ -231,16 +230,16 @@
   <!-- section background finish -->
 
   <!-- squad fashion carousel  -->
-  <section id="Fashion carousel">
+  <section id="Fashion-carousel">
     <div class="container">
       <h3 class="text-center p-5" id="h3title">Hot Fashion Products</h1>
         <div class="row">
-          <div class="col-lg-3 col-sm Luxury text-center">
+          <div id="img1" class="col-lg col-sm Luxury text-center">
             <img src="./public/img/products_mini/product-luxry-sofa.jpg" width="100%" alt="">
             <span id="lux2">Luxury Sofa</span> <br>
             <span class="text-danger">$600.00</span>
           </div>
-          <div class="col-lg-3 col-sm solde">
+          <div id="img2" class="col-lg col-sm solde">
             <img src="./public/img/products_mini/product-gloves.jpg" width="100%" alt="">
             <div class="saleandtitle d-flex">
               <div class="sale pt-3">
@@ -253,14 +252,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm bol">
+          <div id="img3" class="col-lg col-sm bol">
             <img src="./public/img/products_mini/product-cups.jpg" width="100%" alt="">
             <div class="text-center pt-3">
               <span id="bol2">Colorful Bowl</span> <br>
               <span class="text-danger">$18.00</span>
             </div>
           </div>
-          <div class="col-lg-3 col-sm">
+          <div id="img4" class="col-lg col-sm">
             <img src="./public/img/products/product-bag-700x500.jpg" width="110%" alt="">
 
             <div class="saletitle d-flex">
@@ -276,35 +275,35 @@
           </div>
 
           <!-- other image carousel display none -->
-          <div class="col-lg-4 col-sm pt-5 d-none">
+          <div id="img5" class="col-lg col-sm">
             <img src="./public/img/products/product-tshitr-700x500.jpg" width="100%" alt="">
             <div class="textprice d-flex flex-column text-center pt-3">
               <span id="tshirt">Minimal T-Shirt</span>
               <span class="text-danger">$15.00</span>
             </div>
           </div>
-          <div class="col-lg-4 col-sm pt-5 d-none">
+          <div id="img6" class="col-lg col-sm">
             <img src="./public/img/products_mini/product-plates.jpg" width="91%" alt="">
             <div class="textprice d-flex flex-column text-center pt-3">
               <span id="plats">Plates Set</span>
               <span class="text-danger">$30.00</span>
             </div>
           </div>
-          <div class="col-lg-4 col-sm pt-5 d-none">
+          <div id="img7" class="col-lg col-sm">
             <img src="./public/img/products_mini/product-modern-sofa.jpg" width="100%" alt="">
             <div class="textprice d-flex flex-column text-center pt-3">
               <span id="sofa">Modern Sofa</span>
               <span class="text-danger">$900.00</span>
             </div>
           </div>
-          <div class="col-lg-4 col-sm pt-5 d-none">
+          <div id="img8" class="col-lg col-sm">
             <img src="./public/img/products_mini/product-bed.jpg" width="100%" alt="">
             <div class="textprice d-flex flex-column text-center pt-3">
               <span id="bed">Bed Linen</span>
               <span class="text-danger">$79.00</span>
             </div>
           </div>
-          <div class="col-lg-4 col-sm pt-5 d-none">
+          <div id="img9" class="col-lg col-sm">
             <img src="./public/img/products_mini/product-shoes.jpg" width="100%" alt="">
             <div class="textprice d-flex flex-column text-center pt-3">
               <span id="shoes">Minimal Shoes</span>

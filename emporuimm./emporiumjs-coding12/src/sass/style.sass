@@ -20,6 +20,7 @@ body
     background-color: black
     box-shadow: 0 0 10px red
     z-index: 99
+
 .sticky + .content
     padding-top: 60px
 
@@ -29,7 +30,7 @@ body
     overflow: hidden
     a
         color: black
-        transition: 0.3s ease-in
+        transition: 0.3s ease-in-out
         margin: 15px
         &:hover
             color: red !important
@@ -51,7 +52,8 @@ body
         p
             img
                 background-size: cover
-    #autotext
+    // AUTOTEXT
+    #autotextspan
         border-right: 0.15em solid #bb0b0b
         letter-spacing: 0.05em
         animation: blink 0.75s step-end infinite
@@ -131,6 +133,10 @@ body
         justify-content: center
         align-items: center
         flex-direction: column
+    #fashion-carousel
+        position: relative
+        margin: auto
+
 
 #over-footer
     .row
@@ -161,7 +167,7 @@ footer
 .popup-form
     display: none
     position: fixed
-    box-shadow: 0 0 50px #ff0015
+    box-shadow: 0 0 50px black
     z-index: 9
     left: 20%
     bottom: 15%
@@ -193,7 +199,7 @@ footer
 .popup-form2
     display: none
     position: fixed
-    box-shadow: 0 0 50px #ff0015
+    box-shadow: 0 0 50px black
     z-index: 9
     left: 20%
     bottom: 15%

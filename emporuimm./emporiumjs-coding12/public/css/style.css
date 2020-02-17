@@ -12252,7 +12252,7 @@ body {
   overflow: hidden; }
   .collapse a {
     color: black;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in-out;
     margin: 15px; }
     .collapse a:hover {
       color: red !important; }
@@ -12273,7 +12273,7 @@ body {
       font-weight: bold; }
     #shop .jumbotron p img {
       background-size: cover; }
-  #shop #autotext {
+  #shop #autotextspan {
     border-right: 0.15em solid #bb0b0b;
     letter-spacing: 0.05em;
     animation: blink 0.75s step-end infinite; }
@@ -12345,6 +12345,9 @@ to {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+  #Background #fashion-carousel {
+    position: relative;
+    margin: auto; }
 
 #over-footer .row .white {
   background-color: whitesmoke; }
@@ -12367,7 +12370,7 @@ footer .black {
 .popup-form {
   display: none;
   position: fixed;
-  box-shadow: 0 0 50px #ff0015;
+  box-shadow: 0 0 50px black;
   z-index: 9;
   left: 20%;
   bottom: 15%;
@@ -12383,7 +12386,8 @@ footer .black {
       max-width: 40%;
       margin-left: 30%;
       opacity: 0.8;
-      font-weight: bold; }
+      font-weight: bold;
+      transition: 3s ease-in-out; }
       .popup-form .formm .btn:hover {
         opacity: 2; }
     .popup-form .formm .cancel {
@@ -12399,7 +12403,7 @@ footer .black {
 .popup-form2 {
   display: none;
   position: fixed;
-  box-shadow: 0 0 50px #ff0015;
+  box-shadow: 0 0 50px black;
   z-index: 9;
   left: 20%;
   bottom: 15%;

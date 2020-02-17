@@ -22,7 +22,7 @@ let plats = document.getElementById('plats')
 let sofa = document.getElementById('sofa')
 let bed = document.getElementById('bed')
 let shoes = document.getElementById('shoes')
-let fashion = document.getElementById('Fashion carousel')
+let fashion = document.getElementById('Fashion-carousel')
 let h3title = document.getElementById('h3title')
 let lux2 = document.getElementById('lux2')
 let leath2 = document.getElementById('leath2')
@@ -154,16 +154,87 @@ function myFunction() {
 
 ///////// AUTO TEXT ANIMATION
 const autotext = document.getElementById('autotext')
-const text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring wich I enjoy with my."
+// const text = "emporuim."
+const text2 = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring wich Ienjoy with my."
 let index = 0
-
+const autotextspan = document.getElementById('autotextspan')
 // jouer animation autotext function
-const play = () => {
-    autotext.innerHTML = text.slice(0, index)
-    index++;
-    if(index > text.length){
+// const play = () => {
+//     autotext.innerHTML = text.slice(0, index)
+//     index++;
+// }
+const play2 = () => {
+    autotextspan.innerHTML = text2.slice(0, index)
+    if (index > text2.length) {
         index = 0
     }
+    index++;
 }
+// let timer = setInterval(play, 250)
+let timer2 = setInterval(play2, 600)
 
-let timer = setInterval(play, 200)
+
+////  CAROUSEL 
+// ciblage btn
+let slide1 = document.getElementById('btn')
+let slide2 = document.getElementById('btn2')
+let slide3 = document.getElementById('btn3')
+let slide4 = document.getElementById('btn4')
+
+////img
+// block
+let img1 = document.getElementById('img1')
+let img2 = document.getElementById('img2')
+let img3 = document.getElementById('img3')
+let img4 = document.getElementById('img4')
+// none
+let img5 = document.getElementById('img5')
+let img6 = document.getElementById('img6')
+let img7 = document.getElementById('img7')
+let img8 = document.getElementById('img8')
+let img9 = document.getElementById('img9')
+img5.style.display = 'none'
+img6.style.display = 'none'
+img7.style.display = 'none'
+img8.style.display = 'none'
+img9.style.display = 'none'
+
+
+// slide 1
+slide1.addEventListener('click', () => {
+    img1.style.display = 'block'
+    img2.style.display = 'block'
+    img3.style.display = 'block'
+    img4.style.display = 'block'
+    img5.style.display = 'none'
+    img6.style.display = 'none'
+    img7.style.display = 'none'
+    img8.style.display = 'none'
+    img9.style.display = 'none'
+
+})
+slide2.addEventListener('click', () => {
+    img1.style.display = 'none'
+    img2.style.display = 'none'
+    img5.style.display = 'block'
+    img6.style.display = 'block'
+})
+slide3.addEventListener('click', () => {
+    img1.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
+    img5.style.display = 'block'
+    img6.style.display = 'block'
+    img7.style.display = 'block'
+})
+slide4.addEventListener('click', () => {
+    img1.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
+    img4.style.display = 'none'
+    img5.style.display = 'none'
+    img6.style.display = 'block'
+    img7.style.display = 'block'
+    img8.style.display = 'block'
+    img9.style.display = 'block'
+})
